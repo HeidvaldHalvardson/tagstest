@@ -1,0 +1,139 @@
+body {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #e2e2e2;
+  min-height: auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.input {
+  width: 240px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.button-add {
+  width: 240px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+}
+
+.edit-area {
+  width: 100%;
+  min-height: 100px;
+  background-color: #fff;
+  margin-top: 20px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.edit-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.edit-item {
+  display: flex;
+  background-color: green;
+  padding: 5px;
+}
+
+.tag-name {
+  margin: 0;
+}
+
+.edit-item button {
+  height: 20px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.save-button {
+  height: 30px;
+  width: 250px;
+  background-color: #ff6666;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.wrapper-saving-tag {
+  margin: 0;
+  list-style-type: none;
+  background-color: #fff;
+  border: 1px solid grey;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.saving-tag {
+  background-color: lime;
+  padding: 5px;
+}
+
+.saving-tag-button-close {
+  border: 2px solid #000;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.saving-tag-button-edit {
+  background-image: url(../img/edit-icon.svg);
+  border: none;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 27px;
+  right: 2px;
+}
+
+.saving-tag-button-edit:disabled {
+  background-color: red;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Tags creating</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <form id="form" action="#">
+      <label class="label" for="input">Add tags</label>
+      <input class="input" id="input" type="text">
+      <input class="visually-hidden" id="id" type="text">
+      <button class="button-add" id="button-add" type="button">Add</button>
+      <div class="edit-area">
+        <ul class="edit-list"></ul>
+        <button class="save-button" id="save-button" type="button">Save</button>
+      </div>
+      <label>readonly
+        <input class="checkbox" id="checkbox" type="checkbox">
+      </label>
+    </form>
+
+    <div class="saving-area" id="saving-area"></div>
+
+  </div>
+
+  <template id="edit-item">
+    <li class="edit-item">
+      <p class="tag-name">tag</p>
+      <button class="tag-button" type="button">x</button>
+    </li>
+  </template>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
